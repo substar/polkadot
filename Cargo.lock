@@ -478,6 +478,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "bitvec"
+version = "0.21.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "35a2e31dce162f8f238c3c35a6600f1df4cb30f8929a6c464b0a8118d17c2502"
+dependencies = [
+ "funty",
+ "radium",
+ "tap",
+ "wyz",
+]
+
+[[package]]
 name = "blake2"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2781,7 +2793,7 @@ dependencies = [
 name = "kusama-runtime"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
@@ -4645,7 +4657,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "75c823fdae1bb5ff5708ee61a62697e6296175dc671710876871c853f48592b3"
 dependencies = [
  "arrayvec 0.5.2",
- "bitvec",
+ "bitvec 0.20.1",
  "byte-slice-cast",
  "parity-scale-codec-derive",
  "serde",
@@ -5065,7 +5077,7 @@ name = "polkadot-availability-bitfield-distribution"
 version = "0.1.0"
 dependencies = [
  "assert_matches",
- "bitvec",
+ "bitvec 0.21.0",
  "env_logger 0.8.2",
  "futures 0.3.12",
  "log",
@@ -5248,7 +5260,7 @@ name = "polkadot-node-core-approval-voting"
 version = "0.1.0"
 dependencies = [
  "assert_matches",
- "bitvec",
+ "bitvec 0.21.0",
  "derive_more",
  "futures 0.3.12",
  "futures-timer 3.0.2",
@@ -5285,7 +5297,7 @@ name = "polkadot-node-core-av-store"
 version = "0.1.0"
 dependencies = [
  "assert_matches",
- "bitvec",
+ "bitvec 0.21.0",
  "env_logger 0.8.2",
  "futures 0.3.12",
  "futures-timer 3.0.2",
@@ -5314,7 +5326,7 @@ name = "polkadot-node-core-backing"
 version = "0.1.0"
 dependencies = [
  "assert_matches",
- "bitvec",
+ "bitvec 0.21.0",
  "futures 0.3.12",
  "polkadot-erasure-coding",
  "polkadot-node-primitives",
@@ -5426,7 +5438,7 @@ dependencies = [
 name = "polkadot-node-core-provisioner"
 version = "0.1.0"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "futures 0.3.12",
  "futures-timer 3.0.2",
  "polkadot-node-subsystem",
@@ -5661,7 +5673,7 @@ dependencies = [
 name = "polkadot-primitives"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-system",
  "hex-literal",
  "parity-scale-codec",
@@ -5719,7 +5731,7 @@ dependencies = [
 name = "polkadot-runtime"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
@@ -5797,7 +5809,7 @@ dependencies = [
 name = "polkadot-runtime-common"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
@@ -5844,7 +5856,7 @@ dependencies = [
 name = "polkadot-runtime-parachains"
 version = "0.8.0"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "derive_more",
  "frame-benchmarking",
  "frame-support",
@@ -6037,7 +6049,7 @@ dependencies = [
 name = "polkadot-test-runtime"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-executive",
  "frame-support",
  "frame-system",
@@ -10498,7 +10510,7 @@ dependencies = [
 name = "westend-runtime"
 version = "0.8.29"
 dependencies = [
- "bitvec",
+ "bitvec 0.21.0",
  "frame-benchmarking",
  "frame-executive",
  "frame-support",
